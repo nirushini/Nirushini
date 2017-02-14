@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_DGZd4fKwEeaRMa8etq4hLg" label="Az_proj_n" description="" language="java" technicalLabel="AZ_PROJ_N" creationDate="2017-02-14T17:49:40.665+0530" author="_DGZd4vKwEeaRMa8etq4hLg" productVersion="Talend Data Fabric-6.2.1.20160704_1411" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/nirushini/Nirushini&quot;,&quot;login&quot;:&quot;nirushini&quot;,&quot;passwd&quot;:&quot;NXNT14eMlszHy0dSiVbxQw==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="MDM"/>
+  <TalendProperties:User xmi:id="_DGZd4vKwEeaRMa8etq4hLg" login="nirushinip@virtusa.com" firstName="Nirushini" lastName="P" type="MDM" additionnalData="{}"/>
+</xmi:XMI>
