@@ -109,6 +109,8 @@
       <relatedItems xmi:id="_xFoVMPN1EeaI2JjgsbpnfQ" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_xFoVMfN1EeaI2JjgsbpnfQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_xFoVMvN1EeaI2JjgsbpnfQ" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_0CkK4PN2EeaI2JjgsbpnfQ" id="_C1aRwPNDEeaRMa8etq4hLg" version="Latest" type="property"/>
+      <relatedItems xmi:id="_0CkK4fN2EeaI2JjgsbpnfQ" id="_C1aRwPNDEeaRMa8etq4hLg - COUNTRIES" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_Ebsc4PKwEeaRMa8etq4hLg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_Ebsc4fKwEeaRMa8etq4hLg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
