@@ -227,8 +227,8 @@
         <mapperTableEntries name="dob" type="id_Date" nullable="true"/>
         <mapperTableEntries name="gender" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="id" type="id_Integer" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="id" expression="row1.id " type="id_Integer" nullable="true" operator="="/>
         <mapperTableEntries name="state" type="id_String" nullable="true"/>
         <mapperTableEntries name="city" type="id_String" nullable="true"/>
       </inputTables>
