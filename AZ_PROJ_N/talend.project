@@ -88,6 +88,7 @@
       <relatedItems xmi:id="_xTJKgPNmEeaI2JjgsbpnfQ" id="_C1aRwPNDEeaRMa8etq4hLg - EMPLOYEES" version="Latest" type="schema"/>
       <relatedItems xmi:id="_iYnkkPNpEeaI2JjgsbpnfQ" id="_DbDLEPNnEeaI2JjgsbpnfQ" version="Latest" type="context"/>
       <relatedItems xmi:id="_iYnkkfNpEeaI2JjgsbpnfQ" id="_C1aRwPNDEeaRMa8etq4hLg - DEPARTMENTS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_N4qcoPNrEeaI2JjgsbpnfQ" id="_HnzuIPNhEeaI2JjgsbpnfQ" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_Ebsc4PKwEeaRMa8etq4hLg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_Ebsc4fKwEeaRMa8etq4hLg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
