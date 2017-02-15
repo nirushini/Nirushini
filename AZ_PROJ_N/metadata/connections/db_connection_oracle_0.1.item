@@ -27,7 +27,6 @@
   <orgomg.cwm.resource.relational:Schema xmi:id="_a8MrlfNDEeaRMa8etq4hLg" name="HR" dataManager="_aup-0PNDEeaRMa8etq4hLg">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_wR-asfNhEeaI2JjgsbpnfQ" name="COUNTRIES" id="_wR-asPNhEeaI2JjgsbpnfQ" comment="country table. Contains 25 rows. References with locations table." label="COUNTRIES" tableType="TABLE">
       <taggedValue xmi:id="_wR-asvNhEeaI2JjgsbpnfQ" tag="Comment" value="country table. Contains 25 rows. References with locations table."/>
-      <taggedValue xmi:id="_wR-as_NhEeaI2JjgsbpnfQ" tag="Comment" value="country table. Contains 25 rows. References with locations table."/>
       <feature xsi:type="relational:TdColumn" xmi:id="_wR-atPNhEeaI2JjgsbpnfQ" name="COUNTRY_ID" comment="Primary key of countries table." label="COUNTRY_ID" length="2" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false">
         <taggedValue xmi:id="_wR-atfNhEeaI2JjgsbpnfQ" tag="Comment" value="Primary key of countries table."/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_wR-atvNhEeaI2JjgsbpnfQ" language="COLUMN_DEF"/>
@@ -44,9 +43,8 @@
         <sqlDataType xmi:id="_wR-av_NhEeaI2JjgsbpnfQ" name="NUMBER" numericPrecision="-127" numericPrecisionRadix="10" javaDataType="3" nullable="columnNullable"/>
       </feature>
     </ownedElement>
-    <ownedElement xsi:type="relational:TdTable" xmi:id="_wWdSEfNhEeaI2JjgsbpnfQ" name="DEPARTMENTS" id="_wWdSEPNhEeaI2JjgsbpnfQ" comment="Departments table that shows details of departments where employees&#xA;work. Contains 27 rows; references with locations, employees, and job_history tables." label="DEPARTMENTS" tableType="TABLE">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_wWdSEfNhEeaI2JjgsbpnfQ" name="DEPARTMENTS" id="_wWdSEPNhEeaI2JjgsbpnfQ" comment="Departments table that shows details of departments where employees&#xD;&#xA;work. Contains 27 rows; references with locations, employees, and job_history tables." label="DEPARTMENTS" tableType="TABLE">
       <taggedValue xmi:id="_wWdSEvNhEeaI2JjgsbpnfQ" tag="Comment" value="Departments table that shows details of departments where employees&#xA;work. Contains 27 rows; references with locations, employees, and job_history tables."/>
-      <taggedValue xmi:id="_wWdSE_NhEeaI2JjgsbpnfQ" tag="Comment" value="Departments table that shows details of departments where employees&#xA;work. Contains 27 rows; references with locations, employees, and job_history tables."/>
       <feature xsi:type="relational:TdColumn" xmi:id="_wWdSFPNhEeaI2JjgsbpnfQ" name="DEPARTMENT_ID" comment="Primary key column of departments table." label="DEPARTMENT_ID" length="4" sourceType="DEC" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_wWdSFfNhEeaI2JjgsbpnfQ" tag="Comment" value="Primary key column of departments table."/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_wWdSFvNhEeaI2JjgsbpnfQ" language="COLUMN_DEF"/>
@@ -70,7 +68,6 @@
     </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="_wZILkfNhEeaI2JjgsbpnfQ" name="EMPLOYEES" id="_wZILkPNhEeaI2JjgsbpnfQ" comment="employees table. Contains 107 rows. References with departments,&#xA;jobs, job_history tables. Contains a self reference." label="EMPLOYEES" tableType="TABLE">
       <taggedValue xmi:id="_wZILkvNhEeaI2JjgsbpnfQ" tag="Comment" value="employees table. Contains 107 rows. References with departments,&#xA;jobs, job_history tables. Contains a self reference."/>
-      <taggedValue xmi:id="_wZILk_NhEeaI2JjgsbpnfQ" tag="Comment" value="employees table. Contains 107 rows. References with departments,&#xA;jobs, job_history tables. Contains a self reference."/>
       <feature xsi:type="relational:TdColumn" xmi:id="_wZILlPNhEeaI2JjgsbpnfQ" name="EMPLOYEE_ID" comment="Primary key of employees table." label="EMPLOYEE_ID" length="6" sourceType="DEC" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_wZILlfNhEeaI2JjgsbpnfQ" tag="Comment" value="Primary key of employees table."/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_wZILlvNhEeaI2JjgsbpnfQ" language="COLUMN_DEF"/>
@@ -129,7 +126,6 @@
     </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="_wdg8UfNhEeaI2JjgsbpnfQ" name="JOB_HISTORY" id="_wdg8UPNhEeaI2JjgsbpnfQ" comment="Table that stores job history of the employees. If an employee&#xA;changes departments within the job or changes jobs within the department,&#xA;new rows get inserted into this table with old job information of the&#xA;employee. Contains a complex primary key: employee_id+start_date.&#xA;Contains 25 rows. References with jobs, employees, and departments tables." label="JOB_HISTORY" tableType="TABLE">
       <taggedValue xmi:id="_wdg8UvNhEeaI2JjgsbpnfQ" tag="Comment" value="Table that stores job history of the employees. If an employee&#xA;changes departments within the job or changes jobs within the department,&#xA;new rows get inserted into this table with old job information of the&#xA;employee. Contains a complex primary key: employee_id+start_date.&#xA;Contains 25 rows. References with jobs, employees, and departments tables."/>
-      <taggedValue xmi:id="_wdg8U_NhEeaI2JjgsbpnfQ" tag="Comment" value="Table that stores job history of the employees. If an employee&#xA;changes departments within the job or changes jobs within the department,&#xA;new rows get inserted into this table with old job information of the&#xA;employee. Contains a complex primary key: employee_id+start_date.&#xA;Contains 25 rows. References with jobs, employees, and departments tables."/>
       <feature xsi:type="relational:TdColumn" xmi:id="_wdg8VPNhEeaI2JjgsbpnfQ" name="EMPLOYEE_ID" comment="A not null column in the complex primary key employee_id+start_date.&#xA;Foreign key to employee_id column of the employee table" label="EMPLOYEE_ID" length="6" sourceType="DEC" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_wdg8VfNhEeaI2JjgsbpnfQ" tag="Comment" value="A not null column in the complex primary key employee_id+start_date.&#xA;Foreign key to employee_id column of the employee table"/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_wdg8VvNhEeaI2JjgsbpnfQ" language="COLUMN_DEF"/>
@@ -158,7 +154,6 @@
     </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="_wieU0PNhEeaI2JjgsbpnfQ" name="JOBS" id="_wiYOMPNhEeaI2JjgsbpnfQ" comment="jobs table with job titles and salary ranges. Contains 19 rows.&#xA;References with employees and job_history table." label="JOBS" tableType="TABLE">
       <taggedValue xmi:id="_wieU0fNhEeaI2JjgsbpnfQ" tag="Comment" value="jobs table with job titles and salary ranges. Contains 19 rows.&#xA;References with employees and job_history table."/>
-      <taggedValue xmi:id="_wieU0vNhEeaI2JjgsbpnfQ" tag="Comment" value="jobs table with job titles and salary ranges. Contains 19 rows.&#xA;References with employees and job_history table."/>
       <feature xsi:type="relational:TdColumn" xmi:id="_wieU0_NhEeaI2JjgsbpnfQ" name="JOB_ID" comment="Primary key of jobs table." label="JOB_ID" length="10" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false">
         <taggedValue xmi:id="_wieU1PNhEeaI2JjgsbpnfQ" tag="Comment" value="Primary key of jobs table."/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_wieU1fNhEeaI2JjgsbpnfQ" language="COLUMN_DEF"/>
@@ -195,7 +190,6 @@
     </ownedElement>
     <ownedElement xsi:type="relational:TdTable" xmi:id="_wsxgUfNhEeaI2JjgsbpnfQ" name="LOCATIONS" id="_wsxgUPNhEeaI2JjgsbpnfQ" comment="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. " label="LOCATIONS" tableType="TABLE">
       <taggedValue xmi:id="_wsxgUvNhEeaI2JjgsbpnfQ" tag="Comment" value="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. "/>
-      <taggedValue xmi:id="_wsxgU_NhEeaI2JjgsbpnfQ" tag="Comment" value="Locations table that contains specific address of a specific office,&#xA;warehouse, and/or production site of a company. Does not store addresses /&#xA;locations of customers. Contains 23 rows; references with the&#xA;departments and countries tables. "/>
       <feature xsi:type="relational:TdColumn" xmi:id="_wsxgVPNhEeaI2JjgsbpnfQ" name="LOCATION_ID" comment="Primary key of locations table" label="LOCATION_ID" length="4" sourceType="DEC" talendType="id_BigDecimal" key="true" nullable="false">
         <taggedValue xmi:id="_wsxgVfNhEeaI2JjgsbpnfQ" tag="Comment" value="Primary key of locations table"/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_wsxgVvNhEeaI2JjgsbpnfQ" language="COLUMN_DEF"/>
