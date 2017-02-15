@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_JbanUfNBEeaRMa8etq4hLg" name="Sample_City" dataPackage="_JbanUvNBEeaRMa8etq4hLg" Server="Localhost 127.0.0.1" FilePath="C:/Talend/6.2.1/studio/workspace/out.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_JbanUvNBEeaRMa8etq4hLg" name="default" dataManager="_JbanUfNBEeaRMa8etq4hLg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_JbanU_NBEeaRMa8etq4hLg" id="_4S5nMPNAEeaRMa8etq4hLg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JbanVPNBEeaRMa8etq4hLg" label="id" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JbanVfNBEeaRMa8etq4hLg" label="state" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_JbanVvNBEeaRMa8etq4hLg" label="city" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
