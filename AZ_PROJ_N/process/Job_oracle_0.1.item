@@ -278,17 +278,57 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMPLOYEE_ID"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY_NAME"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIRST_NAME"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REGION_ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EMAIL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PHONE_NUMBER"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HIRE_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="JOB_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALARY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMMISSION_PCT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MANAGER_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPARTMENT_ID"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -305,31 +345,79 @@
     <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
     <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="COUNTRIES" name="tOracleOutput_1">
-      <column comment="Primary key of countries table." key="true" length="2" name="COUNTRY_ID" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Primary key of countries table."/>
+    <metadata connector="FLOW" label="EMPLOYEES" name="tOracleOutput_1">
+      <column comment="Primary key of employees table." key="true" length="6" name="EMPLOYEE_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key of employees table."/>
       </column>
-      <column comment="Country name" key="false" length="40" name="COUNTRY_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Country name"/>
+      <column comment="First name of the employee. A not null column." key="false" length="20" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="First name of the employee. A not null column."/>
       </column>
-      <column comment="Region ID for the country. Foreign key to region_id column in the departments table." key="false" length="0" name="REGION_ID" nullable="true" pattern="" precision="-1" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value="Region ID for the country. Foreign key to region_id column in the departments table."/>
+      <column comment="Last name of the employee. A not null column." key="false" length="25" name="LAST_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Last name of the employee. A not null column."/>
       </column>
-      <additionalProperties key="Comment" value="country table. Contains 25 rows. References with locations table."/>
+      <column comment="Email id of the employee" key="false" length="25" name="EMAIL" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Email id of the employee"/>
+      </column>
+      <column comment="Phone number of the employee; includes country code and area code" key="false" length="20" name="PHONE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Phone number of the employee; includes country code and area code"/>
+      </column>
+      <column comment="Date when the employee started on this job. A not null column." key="false" length="7" name="HIRE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date when the employee started on this job. A not null column."/>
+      </column>
+      <column comment="Current job of the employee; foreign key to job_id column of the&#xA;jobs table. A not null column." key="false" length="10" name="JOB_ID" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Current job of the employee; foreign key to job_id column of the&#xA;jobs table. A not null column."/>
+      </column>
+      <column comment="Monthly salary of the employee. Must be greater&#xA;than zero (enforced by constraint emp_salary_min)" key="false" length="8" name="SALARY" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Monthly salary of the employee. Must be greater&#xA;than zero (enforced by constraint emp_salary_min)"/>
+      </column>
+      <column comment="Commission percentage of the employee; Only employees in sales&#xA;department elgible for commission percentage" key="false" length="2" name="COMMISSION_PCT" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Commission percentage of the employee; Only employees in sales&#xA;department elgible for commission percentage"/>
+      </column>
+      <column comment="Manager id of the employee; has same domain as manager_id in&#xA;departments table. Foreign key to employee_id column of employees table.&#xA;(useful for reflexive joins and CONNECT BY query)" key="false" length="6" name="MANAGER_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Manager id of the employee; has same domain as manager_id in&#xA;departments table. Foreign key to employee_id column of employees table.&#xA;(useful for reflexive joins and CONNECT BY query)"/>
+      </column>
+      <column comment="Department id where employee works; foreign key to department_id&#xA;column of the departments table" key="false" length="4" name="DEPARTMENT_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Department id where employee works; foreign key to department_id&#xA;column of the departments table"/>
+      </column>
+      <additionalProperties key="Comment" value="employees table. Contains 107 rows. References with departments,&#xA;jobs, job_history tables. Contains a self reference."/>
     </metadata>
-    <metadata connector="REJECT" label="COUNTRIES" name="REJECT">
-      <column comment="Primary key of countries table." key="true" length="2" name="COUNTRY_ID" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Primary key of countries table."/>
+    <metadata connector="REJECT" label="EMPLOYEES" name="REJECT">
+      <column comment="Primary key of employees table." key="true" length="6" name="EMPLOYEE_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Primary key of employees table."/>
       </column>
-      <column comment="Country name" key="false" length="40" name="COUNTRY_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value="Country name"/>
+      <column comment="First name of the employee. A not null column." key="false" length="20" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="First name of the employee. A not null column."/>
       </column>
-      <column comment="Region ID for the country. Foreign key to region_id column in the departments table." key="false" length="0" name="REGION_ID" nullable="true" pattern="" precision="-1" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="Comment" value="Region ID for the country. Foreign key to region_id column in the departments table."/>
+      <column comment="Last name of the employee. A not null column." key="false" length="25" name="LAST_NAME" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Last name of the employee. A not null column."/>
+      </column>
+      <column comment="Email id of the employee" key="false" length="25" name="EMAIL" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Email id of the employee"/>
+      </column>
+      <column comment="Phone number of the employee; includes country code and area code" key="false" length="20" name="PHONE_NUMBER" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Phone number of the employee; includes country code and area code"/>
+      </column>
+      <column comment="Date when the employee started on this job. A not null column." key="false" length="7" name="HIRE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date when the employee started on this job. A not null column."/>
+      </column>
+      <column comment="Current job of the employee; foreign key to job_id column of the&#xA;jobs table. A not null column." key="false" length="10" name="JOB_ID" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Current job of the employee; foreign key to job_id column of the&#xA;jobs table. A not null column."/>
+      </column>
+      <column comment="Monthly salary of the employee. Must be greater&#xA;than zero (enforced by constraint emp_salary_min)" key="false" length="8" name="SALARY" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Monthly salary of the employee. Must be greater&#xA;than zero (enforced by constraint emp_salary_min)"/>
+      </column>
+      <column comment="Commission percentage of the employee; Only employees in sales&#xA;department elgible for commission percentage" key="false" length="2" name="COMMISSION_PCT" nullable="true" pattern="" precision="2" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Commission percentage of the employee; Only employees in sales&#xA;department elgible for commission percentage"/>
+      </column>
+      <column comment="Manager id of the employee; has same domain as manager_id in&#xA;departments table. Foreign key to employee_id column of employees table.&#xA;(useful for reflexive joins and CONNECT BY query)" key="false" length="6" name="MANAGER_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Manager id of the employee; has same domain as manager_id in&#xA;departments table. Foreign key to employee_id column of employees table.&#xA;(useful for reflexive joins and CONNECT BY query)"/>
+      </column>
+      <column comment="Department id where employee works; foreign key to department_id&#xA;column of the departments table" key="false" length="4" name="DEPARTMENT_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Department id where employee works; foreign key to department_id&#xA;column of the departments table"/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <additionalProperties key="Comment" value="country table. Contains 25 rows. References with locations table."/>
+      <additionalProperties key="Comment" value="employees table. Contains 107 rows. References with departments,&#xA;jobs, job_history tables. Contains a self reference."/>
     </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tOracleConnection_1" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_1" target="tOracleInput_1">
