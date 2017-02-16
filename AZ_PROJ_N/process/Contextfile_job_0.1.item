@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="salary_incentive" prompt="salary_incentive?" promptNeeded="false" repositoryContextId="_eiDGIPQuEeaI2JjgsbpnfQ" type="id_Integer" value="600"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -184,7 +186,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var2" expression="row1.employe_nm " type="id_String"/>
-        <mapperTableEntries name="var1" expression="row1.salary + contextsample.salary_incentive " type="id_String"/>
+        <mapperTableEntries name="var1" expression="row1.salary + sample.salary_incentive " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="context">
         <mapperTableEntries name="newColumn" expression="Var.var2 " type="id_String" nullable="true"/>
