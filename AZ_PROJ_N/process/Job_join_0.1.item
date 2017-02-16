@@ -118,7 +118,7 @@
     <routinesParameter id="_FSgwI_KwEeaRMa8etq4hLg" name="TalendDate"/>
     <routinesParameter id="_FSs9Y_KwEeaRMa8etq4hLg" name="TalendString"/>
   </parameters>
-  <node componentName="tS3Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
+  <node componentName="tS3Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
     <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAICD7K3NVJ5FLMSTA&quot;"/>
     <elementParameter field="PASSWORD" name="SECRET_KEY" value="FUnjx5JIDoPCEBUZnn0oIjhQE0+eJPZswtS7YCYI4pEt8jzf+VghuGYIgOkcZcrr"/>
@@ -138,7 +138,7 @@
     <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tS3BucketCreate" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="128">
+  <node componentName="tS3BucketCreate" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3BucketCreate_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
@@ -152,7 +152,7 @@
     <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3BucketCreate_1" offsetLabelX="0" offsetLabelY="0" source="tS3BucketCreate_1" target="tS3Connection_1">
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" source="tS3Connection_1" target="tS3BucketCreate_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <subjob>
