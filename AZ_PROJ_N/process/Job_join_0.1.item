@@ -146,7 +146,7 @@
     <elementParameter field="PASSWORD" name="SECRET_KEY" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false" show="false"/>
     <elementParameter field="OPENED_LIST" name="REGION" value="DEFAULT" show="false"/>
-    <elementParameter field="TEXT" name="BUCKET" value="&quot;az&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET" value="&quot;azsa&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false" show="false"/>
     <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
