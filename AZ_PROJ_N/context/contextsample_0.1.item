@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_pD1fUPQtEeaI2JjgsbpnfQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_pD1fUfQtEeaI2JjgsbpnfQ" comment="" name="salary_incentive" prompt="salary_incentive?" promptNeeded="false" type="id_Integer" value=""/>
+</talendfile:ContextType>
