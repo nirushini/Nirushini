@@ -186,7 +186,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var2" expression="row1.employe_nm " type="id_String"/>
-        <mapperTableEntries name="var1" expression="row1.salary + sample.salary_incentive " type="id_String"/>
+        <mapperTableEntries name="var1" expression="row1.salary + context.salary_incentive " type="id_Integer"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="context">
         <mapperTableEntries name="newColumn" expression="Var.var2 " type="id_String" nullable="true"/>
