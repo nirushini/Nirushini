@@ -7,4 +7,5 @@
   <contextParameter xmi:id="_DbbllfNnEeaI2JjgsbpnfQ" comment="" name="db_connection_oracle_Sid" prompt="db_connection_oracle_Sid?" promptNeeded="false" type="id_String" value="xe"/>
   <contextParameter xmi:id="_DbbllvNnEeaI2JjgsbpnfQ" comment="" name="db_connection_oracle_Login" prompt="db_connection_oracle_Login?" promptNeeded="false" type="id_String" value="system"/>
   <contextParameter xmi:id="_Dbbll_NnEeaI2JjgsbpnfQ" comment="" name="db_connection_oracle_Port" prompt="db_connection_oracle_Port?" promptNeeded="false" type="id_String" value="1521"/>
+  <contextParameter xmi:id="_TBKVgPQxEeaI2JjgsbpnfQ" comment="" name="salary_incentive" prompt="salary_incentive?" promptNeeded="false" type="id_Integer" value="600"/>
 </talendfile:ContextType>
